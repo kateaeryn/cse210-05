@@ -30,12 +30,27 @@ class Score(Actor):
         self.set_text(f"Score: {self._points}")
     
     def set_color(self, color):
+        """Updates the color to the given one.
+        
+        Args:
+            color (Color): The given color.
+        """
         self._color = color
 
     def set_position(self, position):
+        """Updates the position to the given one.
+
+        Args:
+            position (Point): The given position.
+        """
         self._position = position
 
     def get_position(self):
+        """Updates the position to the given one.
+        
+        Args:
+            position (Point): The given position.
+        """
         if self._color == constants.RED:
             self._position = Point(25,0)
         if self._color == constants.GREEN:
@@ -43,6 +58,11 @@ class Score(Actor):
         return self._position
     
     def get_color(self):
+        """Gets the actor's color as a tuple of three ints (r, g, b).
+        
+        Returns:
+            Color: The actor's text color.
+        """
         return self._color
 
     

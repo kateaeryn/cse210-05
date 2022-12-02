@@ -32,7 +32,6 @@ class ControlActorsAction(Action):
         cycle = cast.get_actors("cycles")
         cycle1 = cycle[0]       
         
-       
         # left
         if self._keyboard_service.is_key_down('a'):
             self._direction = Point(-constants.CELL_SIZE, 0)
